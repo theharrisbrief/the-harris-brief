@@ -651,6 +651,70 @@ body.dark-theme {
     50% { opacity: 1; }
 }
 
+/* Enhanced article styles */
+.article-preview {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.read-more, .read-less {
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.read-more:hover, .read-less:hover {
+    background-color: #2563eb;
+    color: white;
+}
+.full-article {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+.full-article p {
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+.full-article h4 {
+    color: #1f2937;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 24px 0 12px 0;
+}
+.highlight-stat {
+    background-color: #fef3c7;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    border-left: 4px solid #f59e0b;
+}
+.highlight-stat strong {
+    color: #92400e;
+}
+.article-section {
+    margin-bottom: 24px;
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Reduced Motion Preferences */
 @media (prefers-reduced-motion: reduce) {
     * {
